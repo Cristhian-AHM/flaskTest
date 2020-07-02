@@ -1,1 +1,2 @@
-heroku ps
+
+web gunicorn app:app
