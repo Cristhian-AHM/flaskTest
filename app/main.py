@@ -1,4 +1,4 @@
-from flask import Flask, request
+"""from flask import Flask, request
 from flask_restful import Resource, Api
 
 app = Flask(__name__)
@@ -20,4 +20,13 @@ api.add_resource(HelloWorld, '/')
 api.add_resource(Multi, '/multi/<int:num>')
 
 if __name__ == "__main__":
-    app.run()
+    app.run()"""
+
+
+from flask import Flask 
+  
+app = Flask(__name__) 
+  
+@app.route("/") 
+def home_view(): 
+        return "<h1>Welcome to Geeks for Geeks</h1>"
